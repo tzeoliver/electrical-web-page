@@ -1,0 +1,10 @@
+pistoke,50,pistokkeet
+sähkötolppa,10,isot
+johto,15,johdot
+kaulin,100,muut
+muuntaja,12,muut
+pistorasia,4,pistokkeet
+patteri,150,muut
+jatkojohto,8,pistokkeet
+katto,4000,isot
+virtakytkin,2,muut

@@ -1,0 +1,137 @@
+	html,
+	body {
+		margin:0;
+		padding:0;
+		height: 100%;
+        background:#fff;
+	}
+	#container {
+		min-height:100%;
+		width: 95%;
+		margin: 0 auto; /*Center container on page*/
+		position:relative;
+	}
+	#header {
+		background:#9FEE00;
+		padding:10px;
+		height: 5%;
+	}
+	#content {
+        height: 85%;
+		width: 95%;
+		padding-bottom:2px;	/* Height of the footer */
+		padding-top: 5px;
+		overflow-y: scroll;
+		position: fixed;
+	}
+	#footer {
+		position:absolute;
+		bottom:0;
+		width:100%;
+		height:5%;			/* Height of the footer */
+		background:#B9F73E;
+
+	}
+	/* other non-essential CSS */
+	#header p,
+	#header h1 {
+		margin:0;
+		padding:10px 0 0 10px;
+	}
+	#footer p {
+		margin:0;
+		padding:10px;
+	}
+    
+    
+    
+/*CLASSES*/
+/* common column settings */
+.colright,
+.colmid,
+.colleft {
+	float:left;
+	width:100%;			/* width of page */
+	position:relative;
+}
+.col1,
+.col2,
+.col3 {
+	float:left;
+	position:relative;
+	padding:0 0 1em 0;	/* no left and right padding on columns, we just make them narrower instead 
+					only padding top and bottom is included here, make it whatever value you need */
+	overflow:hidden;
+}
+/* 3 Column settings */
+.rowHandler {
+    position:relative;	/* This fixes the IE7 overflow hidden bug */
+	clear:both;
+	float:left;
+	width:100%;			/* width of whole page */
+	overflow:hidden;		/* This chops off any overhanging divs */
+	background:#eee;		/* right column background colour */
+}
+.rowHandler .colmid {
+	right:33%;			/* width of the right column */
+	background:#fff;		/* center column background colour */
+}
+.rowHandler .colleft {
+	right:33%;			/* width of the middle column */
+	background:#f4f4f4;	/* left column background colour */
+}
+.rowHandler .col1 {
+	width:29%;			/* width of center column content (column width minus padding on either side) */
+	left:102%;			/* 100% plus left padding of center column */
+}
+.rowHandler .col2 {
+	width:29%;			/* Width of left column content (column width minus padding on either side) */
+	left:37%;			/* width of (right column) plus (center column left and right padding) plus (left column left padding) */
+}
+.rowHandler .col3 {
+	width:31%;			/* Width of right column content (column width minus padding on either side) */
+	left:77%;			/* Please make note of the brackets here:
+					(100% - left column width) plus (center column left and right padding) plus (left column left and right padding) plus (right column left padding) */
+}
+
+/*COLLAPSE CLASSES*/
+.collapse {
+	margin-top: 2px;
+	color: #fff;
+	padding-left: 5px;
+	background: #BF3730;
+}
+
+.collapseData {
+	padding: 10px;
+}
+
+h1 { 
+	padding: 0 5px;
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 1.2em;
+}
+
+.arrow {
+	width: 26px;
+	height: 26px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.plus_sign {
+	background-image: url('img/plus_icon.png');
+}
+
+.minus_sign{
+	background-image: url('img/minus_icon.png');
+}
+
+/*OTHER*/
+.box {
+    display: inline-block;
+    width: 200px;
+    min-height: 200px;
+    margin: 1em;
+}
